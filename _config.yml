@@ -4,4 +4,13 @@ description: Beibei Zhang Real Estate Agent.
 url: https://beibeizhang22.beibeizhang22.github.io
 baseurl: "" # Leave blank for root-level site
 
-remote_theme: Cayman
+# Remote Theme
+remote_theme: pages-themes/cayman # Cayman theme repository
+
+# Plugins
+plugins:
+  - jekyll-remote-theme # Enables remote themes
+
+# Optional: Additional Settings
+markdown: kramdown
+

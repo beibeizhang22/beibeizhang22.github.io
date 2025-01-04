@@ -1,10 +1,10 @@
 ---
-Beibei Zhang
+title: Beibei Zhang
 layout: default
 ---
-- [About Me](about.md)
-- [Projects](projects.md)
-- [Contact](contact.md)
+[Home](index.md)
+[About](about.md)
+[Contact](contact.md)
 
 
 # Beibei Zhang

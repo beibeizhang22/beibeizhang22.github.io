@@ -1,3 +1,11 @@
+---
+title: About Beibei Zhang
+layout: default
+---
+[Home](index.md)
+ [About](about.md)
+ [Contact](contact.md)
+
 ### About
 
 BeiBei Zhang is a real estate agent with a lot of experience who lives in Broward County, Florida. Zhang owns two successful companies that take care of real estate and has control over more than 200 properties. She has worked in real estate for more than 15 years as an agent, property manager, and investor.
@@ -66,7 +74,7 @@ The Atlanta, Georgia-based 501(c)(3) nonprofit organization works to help fight 
 
 Also, BeiBei regularly gives money to homeless shelters and food banks in the area. The real estate agent and trained marketing and sales professional is committed to feeding and helping the homeless and less fortunate in the Tri-county area.
 
-Interests of one's own:
+### Interests of one's own:
 
 Zhang loves interior design in addition to her work as a real estate agent and owner of a property management company. She watches HGTV a lot because she is interested in fixing up old homes and is passionate about it. Most of the shows on the HGTV network are about home improvement and real estate.
 

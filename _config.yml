@@ -13,4 +13,5 @@ plugins:
 
 # Optional: Additional Settings
 markdown: kramdown
+footer: false
 

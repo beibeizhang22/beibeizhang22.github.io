@@ -1,13 +1,5 @@
-<script>
-  var script = document.createElement('script');
-  script.async = true;
-  script.src = 'https://analytics.ahrefs.com/analytics.js';
-  script.setAttribute('data-key', 'EnO88VmW/HRJAudChWc9PA');
-  document.getElementsByTagName('head')[0].appendChild(script);
-</script>
 ---
 title: Beibei Zhang
-layout: default
 ---
 [Home](index.md)
 [About](about.md)
@@ -22,7 +14,13 @@ BeiBei Zhang is a well-known real estate professional from 12427 NW 63rd St., Co
 Aside from her work in this sector, Beibei is an avid philanthropist who frequently donates to charities such as the Boys and Girls Clubs of America and the Rotary Club, as well as spearheading a food drive to aid victims of Hurricane Ian. In addition to her charity efforts, she has various creative hobbies such as tennis, swimming, music creation, interior design, and mentoring. As an investment consultant for her successful property management companies, Zhang's portfolio continues to grow under her direction.
 
 
-
+<script>
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://analytics.ahrefs.com/analytics.js';
+  script.setAttribute('data-key', 'EnO88VmW/HRJAudChWc9PA');
+  document.getElementsByTagName('head')[0].appendChild(script);
+</script>
 
 
 

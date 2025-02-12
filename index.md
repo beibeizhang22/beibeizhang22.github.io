@@ -1,30 +1,77 @@
----
-title: Beibei Zhang
----
-[Home](index.md)
-[About](about.md)
-[Contact](contact.md)
-
-
-# Beibei Zhang
-
-BeiBei Zhang is a well-known real estate professional from 12427 NW 63rd St., Coral Springs. She has been in the field for more than a decade and a half, and she currently owns two thriving real estate management companies which contain over 200 properties. Her primary area of expertise is in acquiring distressed properties for rental or resale since 2007.
-​
-
-Aside from her work in this sector, Beibei is an avid philanthropist who frequently donates to charities such as the Boys and Girls Clubs of America and the Rotary Club, as well as spearheading a food drive to aid victims of Hurricane Ian. In addition to her charity efforts, she has various creative hobbies such as tennis, swimming, music creation, interior design, and mentoring. As an investment consultant for her successful property management companies, Zhang's portfolio continues to grow under her direction.
-
-
-<script>
-  var script = document.createElement('script');
-  script.async = true;
-  script.src = 'https://analytics.ahrefs.com/analytics.js';
-  script.setAttribute('data-key', 'EnO88VmW/HRJAudChWc9PA');
-  document.getElementsByTagName('head')[0].appendChild(script);
-</script>
-
-
-
-
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Payment Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+           %;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Loan Payment Calculator</h2>
+        <div class="input-group">
+            <label for="principal">Loan Amount (P):</label>
+            <input type="number" id="principal" placeholder="Enter loan amount">
+        </div>
+        <div class="input-group">
+            <label for="rate">Annual Interest Rate (r):</label>
+            <input type="number" id="rate" step="0.01" placeholder="Enter annual interest rate">
+        </div>
+        <div class="input-group">
+            <label for="periods">Number of Periods (n):</label>
+            <input type="number" id="periods" placeholder="Enter number of periods">
+        </div>
+        <button onclick="calculatePayment()">Calculate Payment</button>
+        <div class="result" id="result"></div>
+    </div>
+ 
+    <script>
+        function calculatePayment() {
+            const P = parseFloat(document.getElementById('principal').value);
+            const annualRate = parseFloat(document.getElementById('rate').value);
+            const n = parseInt(document.getElementById('periods').value);
+ 
+            if (isNaN(P) || isNaN(annualRate) || isNaN(n) || P <= 0 || annualRate <= 0 || n <= 0) {
+                document.getElementById('result').innerText = 'Please enter valid values.';
+                return;
+            }
+ 
+            const r = annualRate / 100 / 12;
+            const M = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+ 
+            document.getElementById('result').innerText = `Monthly Payment: ${M.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

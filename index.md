@@ -50,12 +50,6 @@
             text-align: center;
             position: relative;
         }
-        .navbar a:not(:last-child)::after {
-            content: "|";
-            color: white;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
         .navbar a:hover {
             background-color: #ddd;
             color: black;

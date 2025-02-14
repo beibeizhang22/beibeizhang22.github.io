@@ -1,3 +1,8 @@
+---
+layout: default
+title: 15-Year vs. 30-Year Mortgages
+---
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">

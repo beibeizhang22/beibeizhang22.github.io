@@ -37,6 +37,29 @@
             border-radius: 5px;
             background-color: #f9f9f9;
         }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+        }
+        .navbar a:not(:last-child)::after {
+            content: "|";
+            color: white;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
     </style>
 </head>
 <body>

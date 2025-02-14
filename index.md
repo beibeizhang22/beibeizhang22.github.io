@@ -41,6 +41,7 @@
 </head>
 <body>
     <div class="container">
+        <a href="beibeizhang-fixadj.md">Fixed vs Adj loan</a>
         <h2>Loan Payment Calculator</h2>
         <div class="input-group">
             <label for="principal">Loan Amount (P):</label>

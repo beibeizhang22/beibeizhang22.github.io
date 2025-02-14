@@ -40,7 +40,7 @@
     </style>
 </head>
 <body>
-    <a href="beibeizhang-fixadj.md">Fixed vs Adj loan</a>
+    <a href="beibeizhang-fixadj.html">Fixed vs Adj loan</a><a href="beibeizhang-fixadj.md">Fixed vs Adj loan</a>
     <div class="container">
         <h2>Loan Payment Calculator</h2>
         <div class="input-group">

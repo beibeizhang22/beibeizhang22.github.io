@@ -40,7 +40,7 @@
     </style>
 </head>
 <body>
-    <a href="beibeizhang-fixadj.html">Fixed vs Adj Loan</a><a href="beibeizhang-maturity.html">15 vs 30 Years</a>
+    <a href="beibeizhang-fixadj.html">Fixed vs Adj Loan</a>;nbsp;nbsp<a href="beibeizhang-maturity.html">15 vs 30 Years</a>;nbsp;nbsp<a href="beibeizhang-types.html">Mortgage Types</a>
     <div class="container">
         <h2>Loan Payment Calculator</h2>
         <div class="input-group">

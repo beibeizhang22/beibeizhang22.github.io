@@ -45,7 +45,7 @@ title: 15-Year vs. 30-Year Mortgages
     </style>
 </head>
 <body>
-    <a href="beibeizhang-fixadj.md">Fixed vs Adj Loan</a><a href="beibeizhang-maturity.html">15 vs 30 Years</a>
+    <a href="beibeizhang-fixadj.html">Fixed vs Adj Loan</a><a href="beibeizhang-maturity.html">15 vs 30 Years</a>
     <div class="container">
         <h2>Loan Payment Calculator</h2>
         <div class="input-group">

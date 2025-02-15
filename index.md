@@ -1,3 +1,8 @@
+---
+layout: default
+title: Beibei Zhang
+---
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -58,7 +63,7 @@
 </head>
 <body>
     <div class="navbar">
-    <a href="beibeizhang-howmuch.html">How much should I Borrow</a>    
+    <a href="beibei-zhang-howmuch.html">How much should I Borrow</a>    
     <a href="beibeizhang-fixadj.html">Fixed vs Adj Loan</a>
     <a href="beibeizhang-maturity.html">15 vs 30 Years</a>
     <a href="beibeizhang-types.html">Mortgage Types</a>

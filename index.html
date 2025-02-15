@@ -86,7 +86,7 @@ title: Beibei Zhang
         <button onclick="calculatePayment()">Calculate Payment</button>
         <div class="result" id="result"></div>
     </div>
- 
+     <br>
     <script>
         function calculatePayment() {
             const P = parseFloat(document.getElementById('principal').value);
@@ -104,6 +104,8 @@ title: Beibei Zhang
             document.getElementById('result').innerText = `Monthly Payment: ${M.toFixed(2)}`;
         }
     </script>
-    {% include footer.html %}
+    <footer style="text-align: center; padding: 20px; background-color: #f8f9fa; margin-top: 30px;">
+    <p>© 2025 by BeiBei Zhang All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

@@ -1,7 +1,8 @@
 # Site Settings
 title: Beibei Zhang
+title2: Free Mortgage Calculator
 description: Free Mortgage Calculator
-url: https://beibeizhang22.beibeizhang22.github.io
+url: https://beibeizhang22.github.io
 baseurl: "" # Leave blank for root-level site
 
 # Remote Theme

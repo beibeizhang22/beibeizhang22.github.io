@@ -11,8 +11,10 @@ remote_theme: pages-themes/cayman # Cayman theme repository
 # Plugins
 plugins:
   - jekyll-remote-theme # Enables remote themes
-  - jekyll-sitemap
 
+exclude:
+  - sitemap.xml
+  
 # Optional: Additional Settings
 markdown: kramdown
 footer: false

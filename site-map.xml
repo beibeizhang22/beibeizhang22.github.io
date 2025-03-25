@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: /site-map.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for page in site.pages %}
+    <url>
+        <loc>{{ site.url }}{{ page.url }}</loc>
+        <lastmod>{{ page.last_modified_at | default: page.date | date: "%Y-%m-%d" }}</lastmod>
+    </url>
+    {% endfor %}
+</urlset>

@@ -1,11 +1,4 @@
-Sitemap: https://beibeizhang22.github.io/site-map.xml
-
-User-agent: NerdyBot
+User-agent: *
 Allow: /
 
-User-agent: dotbot
-Crawl-delay: 10
-
-User-agent: *
-Disallow: /ajax/
-Disallow: /apps/
+Sitemap: https://beibeizhang22.github.io/site-map.xml

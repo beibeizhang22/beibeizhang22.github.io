@@ -1,7 +1,7 @@
 Sitemap: https://beibeizhang22.github.io/site-map.xml
 
 User-agent: NerdyBot
-Disallow: /
+Allow: /
 
 User-agent: dotbot
 Crawl-delay: 10

@@ -175,7 +175,47 @@ last_modified_at: 2025-06-07
     flex: 2;
   }
 }
-        
+.agent-bio {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.agent-bio img {
+  width: 100%;
+  max-width: 375px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.agent-bio p {
+  flex: 1;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+}
+
+/* Optional: tighter for mobile */
+@media (max-width: 600px) {
+  .agent-bio {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .agent-bio img {
+    max-width: 100%;
+  }
+}        
     </style>
 </head>
 <body>
@@ -288,9 +328,11 @@ function toggleMenu() {
     <h1>About Beibei Zhang</h1>
     </div>
     <br>
-    <div style="display: flex; align-items: center;">
-    <img src="images/beibeizhangboardsm_orig.jpeg" alt="Beibei Zhang" width="375">
-    <p style="margin-left: 10px;">With 15 years of experience in both interior design and real estate, Beibei Zhang has mastered the art of transforming spaces and helping clients navigate the buying and selling process with confidence. Combining a keen eye for design with in-depth market knowledge, Beibei Zhang brings a unique approach to every project, whether it's staging a home for sale, renovating to increase value, or helping clients find their dream property. With a passion for creating functional yet aesthetically pleasing environments, Beibei Zhang ensures that each transaction results in a seamless and rewarding experience for all involved.</p>
+    <div class="agent-bio">
+      <img src="images/beibeizhangboardsm_orig.jpeg" alt="Beibei Zhang">
+      <p>
+        With 15 years of experience in both interior design and real estate, Beibei Zhang has mastered the art of transforming spaces and helping clients navigate the buying and selling process with confidence. Combining a keen eye for design with in-depth market knowledge, Beibei Zhang brings a unique approach to every project, whether it's staging a home for sale, renovating to increase value, or helping clients find their dream property. With a passion for creating functional yet aesthetically pleasing environments, Beibei Zhang ensures that each transaction results in a seamless and rewarding experience for all involved.
+      </p>
     </div>
     <p>Beibei Zhang provides this free mortgage calculator and information as a public service to assist buyers in navigating the mortgage process.</p>
     <p>Beibei Zhang is located 12427 NW 63rd St., Coral Springs, FL</p>

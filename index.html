@@ -10,6 +10,7 @@ last_modified_at: 2025-06-07
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Beibei Zhang, real estate, mortgage calculator, realtor, coral springs, florida">
+    <meta name="description" content="Beibei Zhang - Real estate expert in Coral Springs, Florida. View listings, use the loan calculator, and connect via social media.">
     <title>Loan Payment Calculator</title>
     <link rel="stylesheet" href="style.css"> 
     <style>
@@ -32,7 +33,7 @@ last_modified_at: 2025-06-07
             margin-bottom: 5px;
         }
         .input-group input {
-           %;
+            width: 100%;
             padding: 8px;
             box-sizing: border-box;
         }
@@ -43,145 +44,136 @@ last_modified_at: 2025-06-07
             border-radius: 5px;
             background-color: #f9f9f9;
         }
-
+        button {
+            padding: 10px 20px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #155a9c;
+        }
         .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 0; /* Ensures no spacing between images */
+            gap: 0;
         }
         .image-container img {
             width: 40px;
             height: 40px;
         }
-.property-card {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-
-.property-image {
-  flex: 1 1 100%;
-  max-height: 250px;
-  overflow: hidden;
-}
-
-.property-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.property-details {
-  flex: 1 1 100%;
-  padding: 16px;
-}
-
-.status {
-  margin: 0 0 6px;
-  font-weight: bold;
-  color: #d32f2f;
-}
-
-.listed-date {
-  margin: 0 0 8px;
-  color: #888;
-  font-size: 0.9em;
-}
-
-.description {
-  margin: 0 0 12px;
-  font-size: 1em;
-}
-
-.price {
-  margin: 0 0 12px;
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #2e7d32;
-}
-
-.listing-link {
-  display: inline-block;
-  margin-bottom: 6px;
-  text-decoration: none;
-  color: #1976d2;
-  font-weight: bold;
-}
-
-.listing-link:hover {
-  text-decoration: underline;
-}
-
-.realtor {
-  margin: 0;
-  font-size: 0.9em;
-  color: #555;
-}
-
-/* Responsive for larger screens */
-@media (min-width: 601px) {
-  .property-card {
-    flex-wrap: nowrap;
-  }
-
-  .property-image {
-    flex: 1;
-    max-width: 250px;
-    height: auto;
-  }
-
-  .property-details {
-    flex: 2;
-  }
-}
-.agent-bio {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  max-width: 900px;
-  margin: 24px auto;
-  padding: 16px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  background-color: #fff;
-  flex-wrap: wrap;
-}
-
-.agent-bio img {
-  width: 100%;
-  max-width: 375px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.agent-bio p {
-  flex: 1;
-  font-size: 1em;
-  line-height: 1.5;
-  color: #333;
-  margin: 0;
-}
-
-/* Optional: tighter for mobile */
-@media (max-width: 600px) {
-  .agent-bio {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .agent-bio img {
-    max-width: 100%;
-  }
-}        
+        .property-card {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .property-image {
+            flex: 1 1 100%;
+            max-height: 250px;
+            overflow: hidden;
+        }
+        .property-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .property-details {
+            flex: 1 1 100%;
+            padding: 16px;
+        }
+        .status {
+            margin: 0 0 6px;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+        .listed-date {
+            margin: 0 0 8px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .description {
+            margin: 0 0 12px;
+            font-size: 1em;
+        }
+        .price {
+            margin: 0 0 12px;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #2e7d32;
+        }
+        .listing-link {
+            display: inline-block;
+            margin-bottom: 6px;
+            text-decoration: none;
+            color: #1976d2;
+            font-weight: bold;
+        }
+        .listing-link:hover {
+            text-decoration: underline;
+        }
+        .realtor {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+        @media (min-width: 601px) {
+            .property-card {
+                flex-wrap: nowrap;
+            }
+            .property-image {
+                flex: 1;
+                max-width: 250px;
+                height: auto;
+            }
+            .property-details {
+                flex: 2;
+            }
+        }
+        .agent-bio {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            max-width: 900px;
+            margin: 24px auto;
+            padding: 16px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            background-color: #fff;
+            flex-wrap: wrap;
+        }
+        .agent-bio img {
+            width: 100%;
+            max-width: 375px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .agent-bio p {
+            flex: 1;
+            font-size: 1em;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+            .agent-bio {
+                flex-direction: column;
+                text-align: left;
+            }
+            .agent-bio img {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -202,50 +194,52 @@ function toggleMenu() {
   navbar.classList.toggle("responsive");
 }
 </script>
-    <br>
-    <div style="text-align: center;">
+
+<br>
+<div style="text-align: center;">
     <a href="https://beibei-zhang.weebly.com" style="color: blue; font-size: 24px; font-weight: bold; text-decoration: underline;" target="_blank" rel="noopener noreferrer">Beibei Zhang Realty</a>
+</div>
+<br>
+
+<div class="container">
+    <h2>Loan Payment Calculator</h2>
+    <div class="input-group">
+        <label for="principal">Loan Amount (P):</label>
+        <input type="number" id="principal" placeholder="Enter loan amount">
     </div>
-    <br>
-    <div class="container">
-        <h2>Loan Payment Calculator</h2>
-        <div class="input-group">
-            <label for="principal">Loan Amount (P):</label>
-            <input type="number" id="principal" placeholder="Enter loan amount">
-        </div>
-        <div class="input-group">
-            <label for="rate">Annual Interest Rate (r):</label>
-            <input type="number" id="rate" step="0.01" placeholder="Enter annual interest rate">
-        </div>
-        <div class="input-group">
-            <label for="periods">Number of Periods (n):</label>
-            <input type="number" id="periods" placeholder="Enter number of periods">
-        </div>
-        <button onclick="calculatePayment()">Calculate Payment</button>
-        <div class="result" id="result"></div>
+    <div class="input-group">
+        <label for="rate">Annual Interest Rate (r):</label>
+        <input type="number" id="rate" step="0.01" inputmode="decimal" placeholder="Enter annual interest rate">
     </div>
-    <script>
-        function calculatePayment() {
-            const P = parseFloat(document.getElementById('principal').value);
-            const annualRate = parseFloat(document.getElementById('rate').value);
-            const n = parseInt(document.getElementById('periods').value);
- 
-            if (isNaN(P) || isNaN(annualRate) || isNaN(n) || P <= 0 || annualRate <= 0 || n <= 0) {
-                document.getElementById('result').innerText = 'Please enter valid values.';
-                return;
-            }
- 
-            const r = annualRate / 100 / 12;
-            const M = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
- 
-            document.getElementById('result').innerText = `Monthly Payment: ${M.toFixed(2)}`;
-        }
-    </script>
-    <br>
-    <div style="text-align: center;">
-    <h1 text-align: center;>Beibei Zhang's Listings</h1>
+    <div class="input-group">
+        <label for="periods">Number of Periods (n):</label>
+        <input type="number" id="periods" placeholder="Enter number of periods">
     </div>
-    <p>   
+    <button onclick="calculatePayment()">Calculate Payment</button>
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+function calculatePayment() {
+    const P = parseFloat(document.getElementById('principal').value);
+    const annualRate = parseFloat(document.getElementById('rate').value);
+    const n = parseInt(document.getElementById('periods').value);
+
+    if (isNaN(P) || isNaN(annualRate) || isNaN(n) || P <= 0 || annualRate <= 0 || n <= 0) {
+        document.getElementById('result').innerText = 'Please enter valid values.';
+        return;
+    }
+
+    const r = annualRate / 100 / 12;
+    const M = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+
+    document.getElementById('result').innerText = `Monthly Payment: $${M.toFixed(2)}`;
+}
+</script>
+
+<br>
+<h1 style="text-align: center;">Beibei Zhang's Listings</h1>
+
 <div class="property-card">
   <div class="property-image">
     <img src="images/a1069.png" alt="Property Image">
@@ -259,7 +253,7 @@ function toggleMenu() {
     <p class="realtor">Realtor: <strong>Beibei Zhang</strong></p>
   </div>
 </div>
-        
+
 <div class="property-card">
   <div class="property-image">
     <img src="images/a5441.png" alt="Property Image">
@@ -274,7 +268,6 @@ function toggleMenu() {
   </div>
 </div>
 
-<!-- Listing 2 -->
 <div class="property-card">
   <div class="property-image">
     <img src="images/a227.png" alt="Property Image">
@@ -289,11 +282,8 @@ function toggleMenu() {
   </div>
 </div>
 
-<!-- HotPicks -->
-     <div style="text-align: center;>
-    <h1 text-align: center;>Beibei Zhang's Hot Pick</h1>
-    </div>
-    <p>   
+<h1 style="text-align: center;">Beibei Zhang's Hot Pick</h1>
+
 <div class="property-card">
   <div class="property-image">
     <img src="images/hotpick.jpg" alt="Property Image">
@@ -304,36 +294,29 @@ function toggleMenu() {
     <p class="description">3 bed 2.5 bath 2,196 sqft</p>
     <p class="price">$785,000</p>
     <a class="listing-link" href="https://www.redfin.com/FL/Parkland/Undisclosed-address-33076/home/41994079" target="_blank" rel="noopener noreferrer">View Listing</a>
-
   </div>
 </div>
-        
-    
-    </p>
-    <br>
-    <div style="text-align: center;">
-    <h1>About Beibei Zhang</h1>
-    </div>
-    <br>
-    <div class="agent-bio">
-      <img src="images/beibeizhangboardsm_orig.jpeg" alt="Beibei Zhang">
-      <p>
-        With 15 years of experience in both interior design and real estate, Beibei Zhang has mastered the art of transforming spaces and helping clients navigate the buying and selling process with confidence. Combining a keen eye for design with in-depth market knowledge, Beibei Zhang brings a unique approach to every project, whether it's staging a home for sale, renovating to increase value, or helping clients find their dream property. With a passion for creating functional yet aesthetically pleasing environments, Beibei Zhang ensures that each transaction results in a seamless and rewarding experience for all involved.
-      </p>
-    </div>
-    <p>Beibei Zhang provides this free mortgage calculator and information as a public service to assist buyers in navigating the mortgage process.</p>
-    <p>Beibei Zhang is located 12427 NW 63rd St., Coral Springs, FL</p>
-    <footer style="text-align: center; padding: 20px; background-color: #f8f9fa; margin-top: 30px;">
-        <div class="image-container">
-        <a href="https://www.linkedin.com/in/beibei-zhang-fl" target="_blank" rel="noopener noreferrer"><img src="LinkedIn_logo.png" alt="Beibei Zhang LinkedIn"></a>
-        <a href="https://x.com/BeibeiZhang23" target="_blank" rel="noopener noreferrer"><img src="x-icon.png" alt="Beibei Zhang X"></a>     
-        <a href="https://www.pinterest.com/BeibeiZhang01/" target="_blank" rel="noopener noreferrer"><img src="Pinterest-logo.png" alt="Beibei Zhang Pinterest"></a>
-        <a href="https://beibei-zhang.weebly.com/" target="_blank" rel="noopener noreferrer"><img src="z_beibei_zhang_realty.png" alt="Beibei Zhang Realty"></a>
-        <a href="https://beibei-zhang-design.weebly.com/" target="_blank" rel="noopener noreferrer"><img src="z_beibei_zhang_design.png" alt="Beibei Zhang Design"></a>
-        </div>  
 
-        
-    <p>© 2025 by BeiBei Zhang All Rights Reserved.</p>
-    </footer>
+<h1 style="text-align: center;">About Beibei Zhang</h1>
+<div class="agent-bio">
+  <img src="images/beibeizhangboardsm_orig.jpeg" alt="Beibei Zhang">
+  <p>
+    With 15 years of experience in both interior design and real estate, Beibei Zhang has mastered the art of transforming spaces and helping clients navigate the buying and selling process with confidence. Combining a keen eye for design with in-depth market knowledge, Beibei Zhang brings a unique approach to every project, whether it's staging a home for sale, renovating to increase value, or helping clients find their dream property. With a passion for creating functional yet aesthetically pleasing environments, Beibei Zhang ensures that each transaction results in a seamless and rewarding experience for all involved.
+  </p>
+</div>
+
+<p style="text-align: center;">Beibei Zhang provides this free mortgage calculator and information as a public service to assist buyers in navigating the mortgage process.</p>
+<p style="text-align: center;">Beibei Zhang is located 12427 NW 63rd St., Coral Springs, FL</p>
+
+<footer style="text-align: center; padding: 20px; background-color: #f8f9fa; margin-top: 30px;">
+    <div class="image-container">
+        <a href="https://www.linkedin.com/in/beibei-zhang-fl" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><img src="LinkedIn_logo.png" alt="Beibei Zhang LinkedIn"></a>
+        <a href="https://x.com/BeibeiZhang23" target="_blank" rel="noopener noreferrer" aria-label="X Profile"><img src="x-icon.png" alt="Beibei Zhang X"></a>     
+        <a href="https://www.pinterest.com/BeibeiZhang01/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest Profile"><img src="Pinterest-logo.png" alt="Beibei Zhang Pinterest"></a>
+        <a href="https://beibei-zhang.weebly.com/" target="_blank" rel="noopener noreferrer" aria-label="Realty Site"><img src="z_beibei_zhang_realty.png" alt="Beibei Zhang Realty"></a>
+        <a href="https://beibei-zhang-design.weebly.com/" target="_blank" rel="noopener noreferrer" aria-label="Design Site"><img src="z_beibei_zhang_design.png" alt="Beibei Zhang Design"></a>
+    </div>  
+    <p>© 2025 by BeiBei Zhang. All Rights Reserved.</p>
+</footer>
 </body>
 </html>

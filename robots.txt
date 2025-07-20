@@ -1,1 +1,1 @@
-Sitemap: https://beibeizhang22.github.io/site-map.xml
+Sitemap: https://beibeizhang22.github.io/sitemap.xml
